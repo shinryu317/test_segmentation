@@ -1,4 +1,4 @@
-# test segmentation for caffe
+# test segmentation
 ---
 Caffeにおけるセマンティックセグメンテーションの評価ツールです。
 Global accuracy, Class accuracy, Mean IoU の評価ができます。
