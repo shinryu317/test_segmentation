@@ -4,9 +4,6 @@ palette.py
 ==============================
 test_segmentation.py でクラスマップに塗る色を定義する。
 '''
-
-
-# クラス毎に色を指定する。色の順番は BGR。
 sky          = [128, 128, 128]
 building     = [128,   0,   0]
 pole         = [192, 192, 128]
@@ -22,8 +19,6 @@ bicyclist    = [  0, 128, 192]
 unlabeled    = [  0,   0,   0]
 
 
-# 結果を可視化するときに使う色のパレット。
-# test_segmentation.py で読み込む。
 palette = [
     sky,
     building,
