@@ -1,6 +1,6 @@
 # test segmentation
 ---
-Evaluation tool for semantic segmentation task.
+Evaluation tool for semantic segmentation task on caffe.
 
 ## Requirements
 ---
@@ -26,7 +26,7 @@ Using gpu number.
 - visualize  
 Visualize flag of class maps.
 
-## 実行例
+## Usage
 ```  
 python  test_segmentation.py \  
     --testset      /path/to/samples/test.txt  \  

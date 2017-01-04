@@ -2,24 +2,23 @@
 '''
 palette.py
 ==============================
-test_segmentation.py でクラスマップに塗る色を定義する。
+original palette.
 '''
-sky          = [128, 128, 128]
-building     = [128,   0,   0]
-pole         = [192, 192, 128]
-#road_marking = [255,  69,   0]
-road         = [128,  64, 128]
-pavement     = [ 60,  40, 222]
-tree         = [128, 128,   0]
-sign_symbol  = [192, 128, 128]
-fence        = [ 64,  64, 128]
-car          = [ 64,   0, 128]
-pedestrian   = [ 64,  64,   0]
-bicyclist    = [  0, 128, 192]
-unlabeled    = [  0,   0,   0]
+sky          = ( 128, 128, 128 )
+building     = ( 128,   0,   0 )
+pole         = ( 192, 192, 128 )
+road         = ( 128,  64, 128 )
+pavement     = (  60,  40, 222 )
+tree         = ( 128, 128,   0 )
+sign_symbol  = ( 192, 128, 128 )
+fence        = (  64,  64, 128 )
+car          = (  64,   0, 128 )
+pedestrian   = (  64,  64,   0 )
+bicyclist    = (   0, 128, 192 )
+unlabeled    = (   0,   0,   0 )
 
 
-palette = [
+palette = (
     sky,
     building,
     pole,
@@ -32,4 +31,4 @@ palette = [
     pedestrian,
     bicyclist,
     unlabeled
-]
+)

@@ -1,11 +1,11 @@
-data_path=~/caffe/segnet/CamVid
-model_path=~/caffe/segnet/models/retrain
+DATA_PATH=/path/to/data
+MODEL_PATH=/path/to/model
 
 python  test_segmentation.py \
-    --testset      ${data_path}/test_.txt  \
-    --basepath     ${data_path}/test  ${data_path}/testannot  \
+    --testset      $DATA_PATH/test.txt  \
+    --basepath     $DATA_PATH/test  $DATA_PATH/testannot  \
     --palette      palette/palette.py \
-    --prototxt     ${model_path}/prototxt/test.prototxt  \
-    --caffemodel   ${model_path}/caffemodel_bn/test_weights.caffemodel  \
+    --prototxt     $MODEL_PATH/test.prototxt  \
+    --caffemodel   $MODEL_PATH/_iter_50000.caffemodel  \
     --gpu_id       0 \
     --save_dir     result
