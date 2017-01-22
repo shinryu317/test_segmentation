@@ -72,7 +72,7 @@ def load_module(module_path):
     module = imp.load_module(module_name, *info)
     return np.asarray(module.palette, dtype='uint8')
 
-def parse_text(testset, basepath='.'):
+def parse_testset(testset, basepath='.'):
     data_list = []
     basepath = [basepath, basepath] if len(basepath) == 1 else basepath[:2]
     with open(testset, 'r') as f:
@@ -116,7 +116,7 @@ def main():
         caffe.set_mode_cpu()
 
     palette = load_module(args.palette)
-    testset = parse_text(args.testset, args.basepath)
+    testset = parse_testset(args.testset, args.basepath)
     logging.info('testset: {}'.format(args.testset))
     logging.info('prototxt: {}'.format(args.prototxt))
     logging.info('caffemodel: {}'.format(args.caffemodel))
