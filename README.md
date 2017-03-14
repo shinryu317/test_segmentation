@@ -3,7 +3,6 @@
 Evaluation tool for semantic segmentation task on caffe.
 
 ## Requirements
----
 - NumPy
 - OpenCV
 - Caffe
@@ -24,7 +23,7 @@ Output directory of a painted class map.
 - gpu_id  
 Using gpu number.
 - visualize  
-Visualize flag of class maps.
+If true, colorizate class map.
 
 ## Usage
 ```  
